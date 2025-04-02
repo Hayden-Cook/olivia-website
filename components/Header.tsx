@@ -10,7 +10,7 @@ const Header: React.FC = () => {
 
   return (
     <header className="w-full bg-gray-800 text-white p-4 flex justify-between items-center">
-      <div className="text-xl font-bold">My Website</div>
+      <div className="text-xl font-bold">Olivia Cook: Digital Marketing</div>
       <div className="relative">
         <Menu>
           {({ open }) => (
@@ -29,21 +29,21 @@ const Header: React.FC = () => {
                 <MenuItems className="absolute right-0 mt-2 w-48 bg-white border border-gray-200 rounded-md shadow-lg">
                   <MenuItem>
                     {({ active }) => (
-                      <Link href="/" className={`block px-4 py-2 ${active ? 'bg-gray-100' : ''}`}>
+                      <Link href="/" className={`block px-4 py-2 text-gray-800 ${active ? 'bg-gray-100' : ''} hover:bg-gray-200`}>
                         Home
                       </Link>
                     )}
                   </MenuItem>
                   <MenuItem>
                     {({ active }) => (
-                      <Link href="/about" className={`block px-4 py-2 ${active ? 'bg-gray-100' : ''}`}>
+                      <Link href="/about" className={`block px-4 py-2 text-gray-800 ${active ? 'bg-gray-100' : ''} hover:bg-gray-200`}>
                         About
                       </Link>
                     )}
                   </MenuItem>
                   <MenuItem>
                     {({ active }) => (
-                      <Link href="/contact" className={`block px-4 py-2 ${active ? 'bg-gray-100' : ''}`}>
+                      <Link href="/contact" className={`block px-4 py-2 text-gray-800 ${active ? 'bg-gray-100' : ''} hover:bg-gray-200`}>
                         Contact
                       </Link>
                     )}
